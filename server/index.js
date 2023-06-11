@@ -10,10 +10,6 @@ const app = express()
 
 app.use(bodyParser.json())
 
-const corsOptions = {
-  origin: ['http://localhost:3000', 'https://nodeparamvalue.vercel.app']
-}
-
 app.use(function (req, res, next) {
   cors({
     origin: '*'
