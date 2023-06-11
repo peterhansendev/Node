@@ -10,7 +10,11 @@ const app = express()
 
 app.use(bodyParser.json());
 
-app.use(cors())
+const corsOptions = {
+    origin: 'http://localhost:3000',
+  }
+  
+  app.use(cors(corsOptions))
 
 app.use(express.static(path.resolve(__dirname, '../client/build')))
 
