@@ -15,6 +15,7 @@ app.use(cors())
 app.use(express.static(path.resolve(__dirname, '../client/build')))
 
 app.post('/api', (req, res) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
   const transformedData = transformData(req.body.input)
   res.json({ message: transformedData })
 })
