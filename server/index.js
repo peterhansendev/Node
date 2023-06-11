@@ -10,16 +10,7 @@ const app = express()
 
 app.use(bodyParser.json())
 
-app.use(function (req, res, next) {
-  cors({
-    origin: '*'
-  })
-
-  res.setHeader('Access-Control-Allow-Origin', '*')
-
-  res.setHeader('Access-Control-Allow-Headers', '*')
-  next()
-})
+app.use(cors)
 
 app.use(express.static(path.resolve(__dirname, '../client/build')))
 
