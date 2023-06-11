@@ -37,7 +37,7 @@ function App () {
   ])
 
   React.useEffect(() => {
-    fetch('https://nodeparamvalue.vercel.app/api', {
+    fetch('https://nodeparamvaluebackend.vercel.app/api', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

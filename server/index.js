@@ -14,7 +14,7 @@ app.use(cors())
 
 app.use(express.static(path.resolve(__dirname, '../client/build')))
 
-app.post('https://nodeparamvalue.vercel.app/api', (req, res) => {
+app.post('/api', (req, res) => {
   const transformedData = transformData(req.body.input)
   res.json({ message: transformedData }) 
 }) 
