@@ -15,7 +15,7 @@
   },
   
 "engines": {
-  "node": "v18.16.0"
+  "node": ">=18.15.0"
 },
   "scripts": {
     "start": "node server/index.js",
