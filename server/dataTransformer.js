@@ -17,7 +17,6 @@ const transformData = (input) => {
       param,
       values: Array.from(values).sort(),
     }));
-  
     return result;
   };
   
